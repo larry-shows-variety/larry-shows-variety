@@ -18,8 +18,55 @@ body {
 main {
   display: grid;
   min-height: 100svh;
+  align-content: center;
+  gap: 2.5rem;
   place-items: center;
   padding: 4rem 1.5rem;
+}
+
+.slideshow {
+  width: 100%;
+  max-width: 64rem;
+  text-align: center;
+}
+
+.slideshow[hidden] {
+  display: none;
+}
+
+.slideshow__viewport {
+  position: relative;
+  height: clamp(18rem, 55vw, 36rem);
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background: #f7f5ef;
+}
+
+.slideshow__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: translateX(100%);
+}
+
+.slideshow__image.is-active {
+  transform: translateX(0);
+}
+
+.slideshow__image.is-leaving {
+  transform: translateX(-100%);
+}
+
+.slideshow__image.is-moving {
+  transition: transform 500ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slideshow__image.is-moving {
+    transition: none;
+  }
 }
 
 .introduction {
