@@ -18,10 +18,10 @@ body {
 main {
   display: grid;
   min-height: 100svh;
-  align-content: center;
+  align-content: start;
   gap: 2.5rem;
   place-items: center;
-  padding: 4rem 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 .slideshow {
@@ -87,7 +87,7 @@ h1 {
 
 p {
   max-width: 38rem;
-  margin: 1.5rem auto 0;
+  margin: 0.5rem auto 0;
   color: #60665c;
   font-size: clamp(1.0625rem, 2vw, 1.375rem);
   line-height: 1.65;
