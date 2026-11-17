@@ -75,6 +75,61 @@ main {
   text-align: center;
 }
 
+.project-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 2rem;
+  width: 100%;
+  max-width: 64rem;
+  padding: 1rem 0;
+  border-block: 1px solid #b6b9ae;
+  text-align: center;
+}
+
+.project-menu a {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.project-menu a,
+.home-link {
+  color: inherit;
+  text-underline-offset: 0.25em;
+  line-height: 1.6;
+}
+
+.project-menu a:hover,
+.home-link:hover {
+  color: #60665c;
+}
+
+.project-menu a:focus-visible,
+.home-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 64rem;
+}
+
+.gallery-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
 h1 {
   margin: 0;
   font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif;
