@@ -1,0 +1,48 @@
+:root {
+  font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  color: #292d28;
+  background: #f7f5ef;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+  padding: 4rem 1.5rem;
+}
+
+.introduction {
+  width: 100%;
+  max-width: 64rem;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+p {
+  max-width: 38rem;
+  margin: 1.5rem auto 0;
+  color: #60665c;
+  font-size: clamp(1.0625rem, 2vw, 1.375rem);
+  line-height: 1.65;
+  text-wrap: balance;
+}
