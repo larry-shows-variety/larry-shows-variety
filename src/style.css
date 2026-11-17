@@ -79,10 +79,21 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem 2rem;
+  gap: 0.75rem 2rem;
   width: 100%;
   max-width: 64rem;
+  padding: 1rem 0;
+  border-block: 1px solid #b6b9ae;
   text-align: center;
+}
+
+.project-menu a {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .project-menu a,
