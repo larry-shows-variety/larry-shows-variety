@@ -75,6 +75,50 @@ main {
   text-align: center;
 }
 
+.project-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 2rem;
+  width: 100%;
+  max-width: 64rem;
+  text-align: center;
+}
+
+.project-menu a,
+.home-link {
+  color: inherit;
+  text-underline-offset: 0.25em;
+  line-height: 1.6;
+}
+
+.project-menu a:hover,
+.home-link:hover {
+  color: #60665c;
+}
+
+.project-menu a:focus-visible,
+.home-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  align-items: start;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 64rem;
+}
+
+.gallery-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
 h1 {
   margin: 0;
   font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif;
